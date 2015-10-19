@@ -1,0 +1,14 @@
+dependencies {
+    testCompile 'junit:junit:4.11'
+    compile 'com.google.guava:guava:18.0'
+}
+
+jar {
+    manifest {
+        attributes "Main-Class": "pl.andrzejressel.sieci.lista3.zadanie1.Main"
+    }
+
+    from {
+        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}

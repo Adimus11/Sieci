@@ -1,0 +1,4 @@
+rootProject.name = 'Lista3'
+
+include 'zadanie1'
+include 'zadanie2'

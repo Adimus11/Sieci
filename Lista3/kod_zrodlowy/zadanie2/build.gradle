@@ -1,0 +1,9 @@
+jar {
+    manifest {
+        attributes "Main-Class": "pl.andrzejressel.sieci.lista3.zadanie2.Main"
+    }
+
+    from {
+        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}

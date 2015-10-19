@@ -1,0 +1,18 @@
+subprojects {
+
+    apply plugin: 'java'
+
+    repositories {
+        mavenCentral()
+    }
+
+    sourceSets {
+        main {
+            java {
+                srcDir 'src/java'
+            }
+        }
+    }
+
+    compileJava.options.encoding = 'UTF-8'
+}
